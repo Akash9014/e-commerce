@@ -10,14 +10,21 @@ header{
     height: 6vh;
     background-color:var(--main-bg-color );
     color: white;
-    flex: 1;
-   
-
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
 }
 .container{
-    height: calc(100vh-6vh-6vh);
-    flex: 3s;
-    
+    height:inherit;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }
 footer{
     height: 6vh;
@@ -28,14 +35,23 @@ footer{
  
 }
 .slider{
-    margin:auto;
-    width: 80vw; 
-    margin: 12px auto;
+    width: 100vw;
+    height:50vh;
+    display:flex;
+    justify-content: center;
+    padding:20px 0px;
     overflow: hidden;
 }
+
+.slider img{
+    width:60%;
+    height:100%;
+}
+
 .logo{
     display: flex;
     align-items: center;
+    margin-left:30px;
 }
 .search button{
     font-family:'Courier New', Courier, monospace;
@@ -76,24 +92,22 @@ footer{
     align-items: center;
     justify-content: center;
     width: 35vw;
+    margin-right:30px;
     /* padding: 5px; */
 }
-
 
 nav{
     display: flex;
 }
 nav ul{
- 
     height: 58px;
     display: flex;
-    justify-content: flex-start;
+    justify-content:flex-start;
     align-items: center ;
 }
 nav ul li a{
     color: white;
     text-decoration: none;
-
 }
 nav ul li a:hover{
     /* color: white; */
